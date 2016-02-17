@@ -1,0 +1,9 @@
+<jboss-deployment-structure>
+    <deployment>
+
+        <dependencies>
+            <module name="org.wildfly.extension.undertow" services="export" export="true" />
+        </dependencies>
+
+    </deployment>
+</jboss-deployment-structure>

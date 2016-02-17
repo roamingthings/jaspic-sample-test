@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+>
+<h:head>
+    <title>Login-System-Test</title>
+</h:head>
+<h:body>
+    <div>
+        <h1>Login-System-Test</h1>
+
+            <ul>
+                <!--
+                <li><a href="#{request.contextPath}/login?code=m*cKUgT7">Login</a></li>
+                -->
+                <li><a href="#{request.contextPath}/servlet/protected/welcome?doLogin=true">Login now</a></li>
+                <li><a href="#{request.contextPath}/servlet/protected/welcome?doLogin=true&amp;doForward=true">Login now and forward</a></li>
+                <li><a href="#{request.contextPath}/servlet/unprotected/welcome">Unprotected Servlet</a></li>
+                <li><a href="#{request.contextPath}/servlet/protected/welcome">Protected Servlet</a></li>
+                <li><a href="#{request.contextPath}/servlet/logout">Logout</a></li>
+            </ul>
+        <ul>
+            <li>Current principal: #{request.userPrincipal}</li>
+            <li>Session ID: #{session.id}</li>
+        </ul>
+    </div>
+</h:body>
+
+</html>
